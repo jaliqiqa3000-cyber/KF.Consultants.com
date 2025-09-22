@@ -1,0 +1,142 @@
+/* styles.css */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4faff;
+  color: #002244;
+}
+
+.navbars {
+  background-color: #002244;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  padding: 1rem 2rem;
+  height: 30px;
+
+}
+
+
+.logo {
+  color: white;
+  font-weight: bold;
+  font-size: large;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links li {
+  position: relative;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem;
+  transition: background 0.3s;
+}
+
+.nav-links a:hover {
+  background-color: #0055aa;
+  border-radius: 4px;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 2.5rem;
+  left: 0;
+  background-color: #0055aa;
+  list-style: none;
+  padding: 0.5rem 0;
+  border-radius: 4px;
+  z-index: 1000;
+}
+
+.dropdown-menu li a {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: white;
+}
+
+header{
+    background-color: #0055aa;
+}
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.hero {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: linear-gradient(to right, #0055aa, #002244);
+  color: white;
+  height: 800px;
+}
+
+footer {
+  background-color: #002244;
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+  margin-top: 0;
+}
+
+.picture{ 
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+}
+
+
+
+.slideshow-container {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.fade {
+  animation: fadeEffect 12s infinite;
+}
+
+@keyframes fadeEffect {
+  0% { opacity: 1; }
+  33% { opacity: 0; }
+  66% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.slide:nth-child(1) { animation-delay: 0s; }
+.slide:nth-child(2) { animation-delay: 4s; }
+.slide:nth-child(3) { animation-delay: 8s; }
+
+.hero-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  background-color: rgba(0, 34, 68, 0.6);
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.services{
+    height: 600px;
+}
